@@ -1,46 +1,31 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-  <meta http-equiv="Content-Style-Type" content="text/css">
-  <title></title>
-  <meta name="Generator" content="Cocoa HTML Writer">
-  <meta name="CocoaVersion" content="2487.5">
-  <style type="text/css">
-    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica}
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TradingView Widget</title>
 </head>
 <body>
-<p class="p1">&lt;!DOCTYPE html&gt;</p>
-<p class="p1">&lt;html lang="en"&gt;</p>
-<p class="p1">&lt;head&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;meta charset="UTF-8"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;title&gt;TradingView Widget&lt;/title&gt;</p>
-<p class="p1">&lt;/head&gt;</p>
-<p class="p1">&lt;body&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;!-- TradingView Widget BEGIN --&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="tradingview-widget-container" style="height:100%; width:100%; position: absolute;"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="tradingview-widget-container__widget"&gt;&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-advanced-chart.js"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>{</p>
-<p class="p1"><span class="Apple-converted-space">                </span>"autosize": true,</p>
-<p class="p1"><span class="Apple-converted-space">                </span>"symbol": "COINBASE:SEAMUSD",</p>
-<p class="p1"><span class="Apple-converted-space">                </span>"interval": "D",</p>
-<p class="p1"><span class="Apple-converted-space">                </span>"timezone": "Etc/UTC",</p>
-<p class="p1"><span class="Apple-converted-space">                </span>"theme": "dark",</p>
-<p class="p1"><span class="Apple-converted-space">                </span>"style": "3",</p>
-<p class="p1"><span class="Apple-converted-space">                </span>"locale": "en",</p>
-<p class="p1"><span class="Apple-converted-space">                </span>"enable_publishing": false,</p>
-<p class="p1"><span class="Apple-converted-space">                </span>"gridColor": "rgba(240, 243, 250, 0)",</p>
-<p class="p1"><span class="Apple-converted-space">                </span>"allow_symbol_change": false,</p>
-<p class="p1"><span class="Apple-converted-space">                </span>"hide_volume": true,</p>
-<p class="p1"><span class="Apple-converted-space">                </span>"support_host": "https://www.tradingview.com"</p>
-<p class="p1"><span class="Apple-converted-space">            </span>}</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;/script&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;!-- TradingView Widget END --&gt;</p>
-<p class="p1">&lt;/body&gt;</p>
-<p class="p1">&lt;/html&gt;</p>
+    <!-- TradingView Widget BEGIN -->
+    <div class="tradingview-widget-container" style="height:100%; width:100%; position: absolute;">
+        <div class="tradingview-widget-container__widget"></div>
+        <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-advanced-chart.js">
+            {
+                "autosize": true,
+                "symbol": "COINBASE:SEAMUSD",
+                "interval": "D",
+                "timezone": "Etc/UTC",
+                "theme": "dark",
+                "style": "3",
+                "locale": "en",
+                "enable_publishing": false,
+                "gridColor": "rgba(240, 243, 250, 0)",
+                "allow_symbol_change": false,
+                "hide_volume": true,
+                "support_host": "https://www.tradingview.com"
+            }
+        </script>
+    </div>
+    <!-- TradingView Widget END -->
 </body>
 </html>
