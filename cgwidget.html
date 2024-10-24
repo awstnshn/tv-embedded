@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TradingView Crypto Light Widget</title>
+    <meta name="description" content="A web page displaying crypto prices using the CoinGecko widget.">
+    <title>CoinGecko Widget</title>
     <style>
         html, body {
             margin: 0;
@@ -18,11 +19,10 @@
     </style>
 </head>
 <body>
-<div>
- <!-- CoinGecko Widget BEGIN -->
-<script src="https://widgets.coingecko.com/gecko-coin-list-widget.js"></script>
-<gecko-coin-list-widget locale="en" coin-ids="bitcoin,ethereum,solana" initial-currency="usd"></gecko-coin-list-widget>
-<!-- CoinGecko Widget END -->
-</div>
+    <!-- CoinGecko Widget BEGIN -->
+    <gecko-coin-list-widget locale="en" coin-ids="bitcoin,ethereum,solana" initial-currency="usd"></gecko-coin-list-widget>
+    <!-- CoinGecko Widget END -->
+
+    <script src="https://widgets.coingecko.com/gecko-coin-list-widget.js"></script>
 </body>
 </html>
