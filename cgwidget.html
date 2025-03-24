@@ -1,36 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CoinGecko Widget</title>
-    <style>
-        html, body {
-            margin: 0;
-            padding: 0;
-            width: 100%;
-            height: 100%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            background-color: #ffffff;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CoinGecko Widget</title>
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #ffffff;
+    }
+  </style>
 </head>
 <body>
-    <p>This is a text</p>
-    <div id="widget-container">
+  <div id="widget-container"></div>
 
-    <script src="https://widgets.coingecko.com/gecko-coin-list-widget.js" async defer></script>
-    <script>
-        window.addEventListener('DOMContentLoaded', () => {
-            const widget = document.createElement('gecko-coin-list-widget');
-            widget.setAttribute('locale', 'en');
-            widget.setAttribute('coin-ids', 'bitcoin,ethereum,solana');
-            widget.setAttribute('initial-currency', 'usd');
-            document.getElementById('widget-container').appendChild(widget);
-        });
-    </script>
-        </div>
+  <script src="https://widgets.coingecko.com/gecko-coin-list-widget.js" async defer></script>
+  <script>
+    window.addEventListener('DOMContentLoaded', () => {
+      const widget = document.createElement('gecko-coin-list-widget');
+      widget.setAttribute('locale', 'en');
+      widget.setAttribute('coin-ids', 'bitcoin,ethereum,solana');
+      widget.setAttribute('initial-currency', 'usd');
+      document.getElementById('widget-container').appendChild(widget);
+    });
+  </script>
 </body>
 </html>
