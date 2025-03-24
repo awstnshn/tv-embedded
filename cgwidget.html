@@ -3,7 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="A web page displaying crypto prices using the CoinGecko widget.">
     <title>CoinGecko Widget</title>
     <style>
         html, body {
@@ -19,10 +18,17 @@
     </style>
 </head>
 <body>
-    <!-- CoinGecko Widget BEGIN -->
-    <gecko-coin-list-widget locale="en" coin-ids="bitcoin,ethereum,solana" initial-currency="usd"></gecko-coin-list-widget>
-    <!-- CoinGecko Widget END -->
+    <div id="widget-container"></div>
 
-    <script src="https://widgets.coingecko.com/gecko-coin-list-widget.js"></script>
+    <script src="https://widgets.coingecko.com/gecko-coin-list-widget.js" async defer></script>
+    <script>
+        window.addEventListener('DOMContentLoaded', () => {
+            const widget = document.createElement('gecko-coin-list-widget');
+            widget.setAttribute('locale', 'en');
+            widget.setAttribute('coin-ids', 'bitcoin,ethereum,solana');
+            widget.setAttribute('initial-currency', 'usd');
+            document.getElementById('widget-container').appendChild(widget);
+        });
+    </script>
 </body>
 </html>
