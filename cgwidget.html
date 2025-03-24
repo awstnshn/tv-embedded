@@ -3,28 +3,18 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Coin Price Marquee Widget</title>
-  <style>
-    html, body {
-      margin: 0;
-      padding: 0;
-      width: 100%;
-      height: 100%;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      background-color: #ffffff;
-    }
-  </style>
+  <title>My GitHub Page with CoinGecko Widget</title>
 </head>
 <body>
-  <div id="widget-container"><script src="https://widgets.coingecko.com/gecko-coin-price-marquee-widget.js"></script>
-<gecko-coin-price-marquee-widget locale="en" outlined="true" coin-ids="bitcoin,ethereum,solana" initial-currency="usd"></gecko-coin-price-marquee-widget></div>
-
-
+  <!-- Load the CoinGecko widget script -->
+  <script src="https://widgets.coingecko.com/gecko-coin-price-marquee-widget.js"></script>
+  
+  <!-- Insert the widget -->
+  <gecko-coin-price-marquee-widget 
+    locale="en" 
+    outlined="true" 
+    coin-ids="bitcoin,ethereum,solana" 
+    initial-currency="usd">
+  </gecko-coin-price-marquee-widget>
 </body>
 </html>
-
-
-<script src="https://widgets.coingecko.com/gecko-coin-price-marquee-widget.js"></script>
-<gecko-coin-price-marquee-widget locale="en" outlined="true" coin-ids="bitcoin,ethereum,solana" initial-currency="usd"></gecko-coin-price-marquee-widget>
