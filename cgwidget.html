@@ -2,19 +2,15 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My GitHub Page with CoinGecko Widget</title>
+  <title>CoinGecko Widget Test</title>
+  <script src="https://widgets.coingecko.com/gecko-coin-price-marquee-widget.js"></script>
 </head>
 <body>
-  <!-- Load the CoinGecko widget script -->
-  <script src="https://widgets.coingecko.com/gecko-coin-price-marquee-widget.js"></script>
-  
-  <!-- Insert the widget -->
   <gecko-coin-price-marquee-widget 
-    locale="en" 
-    outlined="true" 
-    coin-ids="bitcoin,ethereum,solana" 
-    initial-currency="usd">
+      locale="en" 
+      outlined="true" 
+      coin-ids="bitcoin,ethereum,solana" 
+      initial-currency="usd">
   </gecko-coin-price-marquee-widget>
 </body>
 </html>
