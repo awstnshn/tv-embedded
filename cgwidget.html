@@ -18,19 +18,13 @@
   </style>
 </head>
 <body>
-  <div id="widget-container"></div>
+  <div id="widget-container"><script src="https://widgets.coingecko.com/gecko-coin-price-marquee-widget.js"></script>
+<gecko-coin-price-marquee-widget locale="en" outlined="true" coin-ids="bitcoin,ethereum,solana" initial-currency="usd"></gecko-coin-price-marquee-widget></div>
 
-  <script src="https://widgets.coingecko.com/gecko-coin-price-marquee-widget.js" async defer></script>
-  <script>
-    window.addEventListener('DOMContentLoaded', () => {
-      const widget = document.createElement('gecko-coin-price-marquee-widget');
-      widget.setAttribute('locale', 'en');
-      widget.setAttribute('outlined', 'true');
-      // Update the coin IDs to the ones you want to display:
-      widget.setAttribute('coin-ids', 'bitcoin,ethereum,solana');
-      widget.setAttribute('initial-currency', 'usd');
-      document.getElementById('widget-container').appendChild(widget);
-    });
-  </script>
+
 </body>
 </html>
+
+
+<script src="https://widgets.coingecko.com/gecko-coin-price-marquee-widget.js"></script>
+<gecko-coin-price-marquee-widget locale="en" outlined="true" coin-ids="bitcoin,ethereum,solana" initial-currency="usd"></gecko-coin-price-marquee-widget>
