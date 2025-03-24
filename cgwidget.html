@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>CoinGecko Widget</title>
+  <title>Coin Price Marquee Widget</title>
   <style>
     html, body {
       margin: 0;
@@ -20,11 +20,13 @@
 <body>
   <div id="widget-container"></div>
 
-  <script src="https://widgets.coingecko.com/gecko-coin-list-widget.js" async defer></script>
+  <script src="https://widgets.coingecko.com/gecko-coin-price-marquee-widget.js" async defer></script>
   <script>
     window.addEventListener('DOMContentLoaded', () => {
-      const widget = document.createElement('gecko-coin-list-widget');
+      const widget = document.createElement('gecko-coin-price-marquee-widget');
       widget.setAttribute('locale', 'en');
+      widget.setAttribute('outlined', 'true');
+      // Update the coin IDs to the ones you want to display:
       widget.setAttribute('coin-ids', 'bitcoin,ethereum,solana');
       widget.setAttribute('initial-currency', 'usd');
       document.getElementById('widget-container').appendChild(widget);
