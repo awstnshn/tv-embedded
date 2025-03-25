@@ -3,14 +3,11 @@
 <head>
   <meta charset="UTF-8">
   <title>CoinGecko Widget Test</title>
-  <script src="https://widgets.coingecko.com/gecko-coin-price-marquee-widget.js"></script>
 </head>
 <body>
-  <gecko-coin-price-marquee-widget 
-      locale="en" 
-      outlined="true" 
-      coin-ids="bitcoin,ethereum,solana" 
-      initial-currency="usd">
-  </gecko-coin-price-marquee-widget>
+  <div>
+    <script src="https://widgets.coingecko.com/gecko-coin-price-chart-widget.js"></script>
+<gecko-coin-price-chart-widget locale="en" coin-id="bitcoin" initial-currency="usd" width="0"></gecko-coin-price-chart-widget>
+  </div>
 </body>
 </html>
